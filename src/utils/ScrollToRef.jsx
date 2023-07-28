@@ -10,7 +10,7 @@ export const scrollToRef = ({ componentRef }) => {
 };
 export const scrollToRefMobile = ({ componentRef }) => {
     if (componentRef.current) {
-        const navbarHeight = 200;
+        const navbarHeight = 240;
         const offsetTop = componentRef.current.offsetTop - navbarHeight;
         window.scrollTo({
             top: offsetTop,

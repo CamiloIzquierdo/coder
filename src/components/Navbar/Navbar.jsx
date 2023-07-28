@@ -12,16 +12,8 @@ export const Navbar = ({
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="border-gray-200 lg:rounded bg-blue-800 sticky left-0  top-0 z-10 items-center justify-center lg:flex-nowrap lg:justify-between lg:px-[200px] lg:flex">
-            {/*  <div className="container items-center justify-center mx-auto flex-wrap md:flex-nowrap lg:justify-between contents lg:flex"> */}
-            <div className="flex items-center lg:justify-center bg-blue-800 py-3 justify-between px-5">
-                <button onClick={scrollTop}>
-                    <img
-                        src="/vite.svg"
-                        className="h-10 lg:h-12 cursor-pointer"
-                        alt="Flowbite Logo"
-                    />
-                </button>
+        <nav className="border-gray-200 bg-white lg:rounded sticky left-0 top-0 z-10 items-center w-full justify-center lg:flex-nowrap lg:flex">
+            <div className="flex items-center lg:justify-center py-3 justify-between">
                 <div className="flex justify-center gap-6 items-center lg:hidden">
                     <div>
                         <Hamburger
@@ -33,11 +25,11 @@ export const Navbar = ({
                 </div>
             </div>
             <div className="md:block md:w-fit" id="navbar-solid-bg">
-                <ul
+                <div
                     onClick={() => setOpen(false)}
                     className={`${
                         open ? "max-h-96" : "max-h-0"
-                    } overflow-hidden flex-col lg:items-center flex lg:flex-row lg:gap-6 items-start transition-all duration-500 lg:duration-0 lg:max-h-full lg:overflow-visible lg:transition-none lg:opacity-100`}
+                    } overflow-hidden flex-col lg:items-center w-full flex lg:flex-row lg:gap-6 items-start transition-all duration-500 lg:duration-0 lg:max-h-full lg:overflow-visible lg:transition-none lg:opacity-100`}
                 >
                     <NavbarData
                         open={open}
@@ -46,7 +38,7 @@ export const Navbar = ({
                         testimoniosRef={testimoniosRef}
                         contactoRef={contactoRef}
                     />
-                </ul>
+                </div>
             </div>
             {/*  </div> */}
         </nav>

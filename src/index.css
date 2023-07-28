@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.my-slider .slick-track {
+    display: flex;
+    gap: 1rem; /* Ajusta el valor según el espacio deseado entre las imágenes */
+}

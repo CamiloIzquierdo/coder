@@ -8,7 +8,7 @@ export const NavbarData = ({
 }) => {
     console.log(open);
     return (
-        <>
+        <ul className="xl:h-[90px] h-full pb-4 xl:pb-0 xl:items-center xl:justify-center items-start flex xl:flex-row flex-col xl:gap-20 w-full text-xl font-thin">
             <button
                 onClick={
                     open
@@ -22,10 +22,11 @@ export const NavbarData = ({
                               })
                 }
             >
-                <li>
-                    <span className="block py-2 pl-3 pr-4 text-white rounded font-semibold justify-start lg:hover:bg-transparent lg:border-0 lg:hover:text-violet-600 lg:p-0 ">
+                <li className="w-full flex flex-col items-center justify-center gap-1">
+                    <span className="block py-2 pl-3 pr-4 text-slate-800 rounded xl:font-semibold justify-start lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0 ">
                         Servicios
                     </span>
+                    <div className="h-[2px] w-9 bg-primary justify-center items-center hidden xl:flex"></div>
                 </li>
             </button>
             <button
@@ -41,10 +42,11 @@ export const NavbarData = ({
                               })
                 }
             >
-                <li>
-                    <span className="block py-2 pl-3 pr-4 text-white rounded font-semibold lg:hover:bg-transparent lg:border-0 lg:hover:text-violet-600 lg:p-0 ">
+                <li className="w-full flex flex-col items-center justify-center gap-1">
+                    <span className="block py-2 pl-3 pr-4 text-slate-800 rounded xl:font-semibold justify-start lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0 ">
                         Sobre mi
                     </span>
+                    <div className="h-[2px] w-9 bg-primary justify-center items-center hidden xl:flex"></div>
                 </li>
             </button>
             <button
@@ -60,10 +62,11 @@ export const NavbarData = ({
                               })
                 }
             >
-                <li>
-                    <span className="block py-2 pl-3 pr-4 text-white rounded font-semibold lg:hover:bg-transparent lg:border-0 lg:hover:text-violet-600 lg:p-0 ">
+                <li className="w-full flex flex-col items-center justify-center gap-1">
+                    <span className="block py-2 pl-3 pr-4 text-slate-800 rounded xl:font-semibold justify-start lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0 ">
                         Testimonios
                     </span>
+                    <div className="h-[2px] w-9 bg-primary justify-center items-center hidden xl:flex"></div>
                 </li>
             </button>
             <button
@@ -79,12 +82,12 @@ export const NavbarData = ({
                               })
                 }
             >
-                <li>
-                    <span className="block py-2 pl-3 pr-4 text-white rounded font-semibold lg:hover:bg-transparent lg:border-0 lg:hover:text-violet-600 lg:p-0 ">
+                <li className="px-3 xl:px-0">
+                    <span className="block py-2 px-10 text-white xl:font-semibold lg:border-0 lg:hover:text-slate-800 lg:py-3 lg:px-10 bg-primary xl:rounded-3xl">
                         Contacto
                     </span>
                 </li>
             </button>
-        </>
+        </ul>
     );
 };

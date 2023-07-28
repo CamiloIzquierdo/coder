@@ -6,6 +6,8 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { Servicios } from "./components/Servicios/Servicios";
 import { SobreMi } from "./components/Sobre mi/SobreMi";
 import { Testimonios } from "./components/Testimonios/Testimonios";
+import { ServicesBox } from "./components/ServicesBox";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
     const serviciosRef = useRef(null);
@@ -22,10 +24,13 @@ function App() {
                 contactoRef={contactoRef}
             />
             <Header />
-            <Servicios serviciosRef={serviciosRef} />
             <SobreMi sobreMiRef={sobreMiRef} />
+            <div className="xl:mx-16">
+                <Servicios serviciosRef={serviciosRef} />
+            </div>
             <Testimonios testimoniosRef={testimoniosRef} />
             <Contacto contactoRef={contactoRef} />
+            <Footer />
         </div>
     );
 }

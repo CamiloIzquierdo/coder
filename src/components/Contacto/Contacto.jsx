@@ -1,75 +1,56 @@
+import React, { useState } from "react";
+import { ContactoForm } from "./ContactoForm";
+
 export const Contacto = ({ contactoRef }) => {
+    const [formulario, setFormulario] = useState({
+        nombre: "",
+        email: "",
+        servicio: "",
+        mensaje: "",
+    });
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormulario((prevFormulario) => ({
+            ...prevFormulario,
+            [name]: value,
+        }));
+    };
+
+    const handleBorrarTodo = () => {
+        setFormulario({
+            nombre: "",
+            email: "",
+            servicio: "",
+            mensaje: "",
+        });
+    };
+
     return (
         <div
-            className="bg-slate-500 flex w-full h-screen items-center justify-center px-1"
+            className="bg-white flex w-full h-screen items-center justify-center xl:px-1"
             ref={contactoRef}
         >
-            <div className="border lg:py-20 lg:w-[1200px] w-full lg:px-8 px-3 flex items-center justify-center">
-                <form className="flex flex-col gap-10 w-full">
-                    <label
-                        className="text-3xl flex flex-col gap-2"
-                        htmlFor="nombre"
-                    >
-                        Nombre:
-                        <input
-                            className="w-full h-[40px] text-xl"
-                            type="text"
-                            id="nombre"
-                            name="nombre"
-                            required
-                        />
-                    </label>
-
-                    <label
-                        className="text-3xl flex flex-col gap-2"
-                        htmlFor="email"
-                    >
-                        Correo electrónico:
-                        <input
-                            className="w-full h-[40px] text-xl"
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                        />
-                    </label>
-
-                    <label className="text-3xl flex gap-7" htmlFor="servicio">
-                        Servicio:
-                        <select
-                            className="w-fit h-[40px] text-xl"
-                            type="text"
-                            id="servicio"
-                            name="servicio"
-                            required
-                        >
-                            <option value="">Seleccionar servicio</option>
-                            <option value="Servicio 1">Servicio 1</option>
-                            <option value="Servicio 2">Servicio 2</option>
-                            <option value="Servicio 3">Servicio 3</option>
-                        </select>
-                    </label>
-
-                    <label
-                        className="text-3xl flex flex-col gap-2"
-                        htmlFor="mensaje"
-                    >
-                        Mensaje:
-                        <textarea
-                            className="h-40"
-                            id="mensaje"
-                            name="mensaje"
-                            required
-                        ></textarea>
-                    </label>
-                    <div className="w-full flex justify-center items-center">
-                        <input
-                            type="submit"
-                            value="Enviar"
-                            className="border flex items-center w-fit justify-center py-2 px-4 rounded-lg"
-                        />
-                    </div>
-                </form>
+            <div
+                className="xl:w-1/2 w-full items-center justify-center flex h-screen bg-cover bg-center bg-custom-opacity"
+                style={{
+                    backgroundImage: `linear-gradient(rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.5)), url("contacto.jpg")`,
+                }}
+            >
+                <div className="xl:hidden flex justify-center items-center">
+                    <ContactoForm />
+                </div>
+            </div>
+            <div className="hidden xl:w-1/2 h-screen bg-white xl:flex xl:flex-row flex-col items-center">
+                <div className="xl:w-[550px] xl:h-[655px] w-full h-full items-start flex  xl:-mx-72 bg-white px-10 py-12 rounded-2xl drop-shadow-2xl">
+                    <ContactoForm />
+                </div>
+                <div className="flex w-full h-full justify-center items-center pl-72 flex-col ">
+                    <h2 className="font-bold text-4xl text-slate-800">
+                        CONTÁCTAME
+                    </h2>
+                    <div className="h-[2px] w-16 bg-primary"></div>
+                </div>
             </div>
         </div>
     );

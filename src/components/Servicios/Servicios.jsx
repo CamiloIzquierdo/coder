@@ -1,16 +1,27 @@
+import { servicesInfo } from "../../mockup/servicesMockup";
+import { ServicesBox } from "../ServicesBox";
+
 export const Servicios = ({ serviciosRef }) => {
     return (
         <div
-            className="py-8 px-16 2xl:h-screen h-full flex-col flex items-center gap-7"
+            className="py-8 xl:px-16 h-full flex flex-col items-center gap-7"
             ref={serviciosRef}
         >
-            <span className="font-bold text-5xl">SERVICIOS</span>
-            <div className="justify-center items-center flex flex-wrap gap-10">
-                <img src="servicio.webp" className="w-[600px]" alt="" />
-                <img src="servicio.webp" className="w-[600px]" alt="" />
-                <img src="servicio.webp" className="w-[600px]" alt="" />
-                <img src="servicio.webp" className="w-[600px]" alt="" />
+            <div className="flex items-center justify-center flex-col gap-2">
+                <span className="font-bold text-4xl text-slate-800">
+                    SERVICIOS
+                </span>
+                <div className="h-[2px] w-16 bg-primary" />
             </div>
+            {servicesInfo.map((service) => (
+                <ServicesBox
+                    titulo={service.titulo}
+                    imagen={service.imagen}
+                    key={service.id}
+                >
+                    {service.texto}
+                </ServicesBox>
+            ))}
         </div>
     );
 };
