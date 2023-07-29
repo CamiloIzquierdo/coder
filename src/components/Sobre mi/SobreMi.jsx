@@ -1,11 +1,11 @@
 export const SobreMi = ({ sobreMiRef }) => {
     return (
         <div
-            className="xl:h-screen h-full flex flex-col items-center gap-20 py-8"
+            className="xl:h-screen h-full flex flex-col items-center"
             ref={sobreMiRef}
         >
-            <div className="flex items-center justify-center flex-col gap-2">
-                <span className="xl:font-bold font-semibold xl:text-4xl text-xl text-slate-800">
+            <div className="flex items-center justify-center flex-col gap-2 pb-24">
+                <span className="new-hero-medium xl:text-3xl text-xl text-tertiary">
                     SOBRE MI
                 </span>
                 <div className="h-[2px] w-16 bg-primary"></div>
@@ -16,7 +16,7 @@ export const SobreMi = ({ sobreMiRef }) => {
                     className="xl:h-[600px] xl:w-[550px] h-[400px] w-[350px] object-cover xl:rounded-tr-[177px] xl:rounded-t-none rounded-t-[107px] shadow-2xl"
                     alt=""
                 />
-                <div className="flex flex-col xl:max-w-2xl xl:text-2xl xl:font-semibold font-normal max-w-xs text-lg text-secondary gap-5">
+                <div className="flex flex-col xl:max-w-2xl xl:text-2xl xl:new-hero-regular max-w-xs text-lg text-secondary gap-5 text-justify">
                     <span className="">
                         En el año 2017, me formé como Coach en fundación
                         Univercitas y descubrí el maravilloso mundo del

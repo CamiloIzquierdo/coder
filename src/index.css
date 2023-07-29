@@ -2,8 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-family: "Montserrat", sans-serif;
+@font-face {
+    font-family: "New Hero Medium Italic"; /* Nombre de la fuente */
+    src: url("/public/fonts/NewHeroMediumItalic.otf") format("woff"); /* Ruta a la fuente woff */
+}
+@font-face {
+    font-family: "New Hero UltraLight"; /* Nombre de la fuente */
+    src: url("/public/fonts/NewHeroUltraLight.otf") format("woff"); /* Ruta a la fuente woff */
+}
+
+@font-face {
+    font-family: "New Hero Medium"; /* Nombre de la fuente */
+    src: url("/public/fonts/NewHeroMedium.otf") format("woff"); /* Ruta a la fuente woff */
+}
+
+@font-face {
+    font-family: "New Hero Regular"; /* Nombre de la fuente */
+    src: url("/public/fonts/NewHeroRegular.otf") format("woff"); /* Ruta a la fuente woff */
+}
+
+@font-face {
+    font-family: "New Hero Regular Italic"; /* Nombre de la fuente */
+    src: url("/public/fonts/NewHeroRegular.otf") format("woff"); /* Ruta a la fuente woff */
+}
+
+.new-hero-ultra {
+    font-family: "New Hero Ultralight", sans-serif; /* Usa la fuente 'Font1' */
+    /* Agrega aquí tus estilos personalizados */
+}
+
+.new-hero-medium-italic {
+    font-family: "New Hero Medium Italic", sans-serif; /* Usa la fuente 'Font1' */
+    /* Agrega aquí tus estilos personalizados */
+}
+.new-hero-medium {
+    font-family: "New Hero Medium", sans-serif; /* Usa la fuente 'Font1' */
+    /* Agrega aquí tus estilos personalizados */
+}
+.new-hero-regular {
+    font-family: "New Hero Regular", sans-serif; /* Usa la fuente 'Font1' */
+    /* Agrega aquí tus estilos personalizados */
+}
+.new-hero-regular-italic {
+    font-family: "New Hero Regular Italic", sans-serif; /* Usa la fuente 'Font1' */
+    /* Agrega aquí tus estilos personalizados */
+}
+
+.bg-custom-opacity {
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.3
+    ); /* Cambia el valor de opacidad (0.5) según tus preferencias */
 }
 .my-slider .slick-track {
     display: flex;

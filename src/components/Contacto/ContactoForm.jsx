@@ -28,7 +28,7 @@ export const ContactoForm = () => {
     return (
         <form
             action=""
-            className="flex flex-col xl:gap-12 gap-6 xl:items-start xl:justify-start items-center justify-center w-full xl:bg-transparent bg-white xl:px-0 xl:py-0 px-5 py-10 rounded-lg xl:rounded-none"
+            className="flex flex-col xl:gap-7 gap-6 xl:items-start xl:justify-start items-center justify-center w-full xl:bg-transparent bg-white xl:px-0 xl:py-0 px-8 py-10 rounded-lg xl:rounded-none"
         >
             <label
                 htmlFor=""
@@ -37,7 +37,7 @@ export const ContactoForm = () => {
                 <span className="px-4">Nombre</span>
                 <input
                     type="text"
-                    className="border rounded-lg text-slate-800 w-full h-8 text-base font-normal px-[15px]"
+                    className="border rounded-lg text-slate-800 w-full h-8 new-hero-regular-italic font-normal text-sm px-[15px]"
                     placeholder="Nombre y apellido"
                     name="nombre"
                     value={formulario.nombre}
@@ -51,7 +51,7 @@ export const ContactoForm = () => {
                 <span className="px-4">Correo electrónico</span>
                 <input
                     type="text"
-                    className="border rounded-lg w-full text-slate-800 h-8 text-base font-normal px-[15px]"
+                    className="border rounded-lg w-full text-slate-800 h-8 new-hero-regular-italic font-normal text-sm px-[15px]"
                     placeholder="correo@dirección.com"
                     name="email"
                     value={formulario.email}
@@ -59,32 +59,42 @@ export const ContactoForm = () => {
                 />
             </label>
             <label
-                className="xl:text-xl text-lg font-bold text-secondary flex xl:gap-48 gap-10 items-center justify-center px-4"
+                className="xl:text-xl text-lg font-bold text-secondary flex xl:gap-44 gap-10 items-center justify-center px-4 rounded-xl"
                 htmlFor="servicio"
             >
-                Servicios:
-                <select
-                    className="w-fit h-[40px] xl:text-xl text-lg text-slate-800"
-                    type="text"
-                    id="servicio"
-                    name="servicio"
-                    required
-                    value={formulario.servicio}
-                    onChange={handleChange}
-                >
-                    <option value="">Selecciona</option>
-                    <option value="Servicio 1">Servicio 1</option>
-                    <option value="Servicio 2">Servicio 2</option>
-                    <option value="Servicio 3">Servicio 3</option>
-                </select>
+                Servicios
+                <div className="flex relative ">
+                    <select
+                        className="w-fit h-[45px] new-hero-regular-italic font-medium text-sm text-tertiary border appearance-none pl-4 py-3 pr-14 rounded-xl"
+                        type="text"
+                        id="servicio"
+                        name="servicio"
+                        required
+                        value={formulario.servicio}
+                        onChange={handleChange}
+                    >
+                        <option value="" selected>
+                            Selecciona
+                        </option>
+                        <option value="Servicio 1">Servicio 1</option>
+                        <option value="Servicio 2">Servicio 2</option>
+                        <option value="Servicio 3 ">Servicio 3</option>
+                    </select>
+                    <img
+                        src="select.svg"
+                        width={13}
+                        className="absolute top-[20px] left-[110px] "
+                        alt=""
+                    />
+                </div>
             </label>
             <label
-                className="xl:text-xl text-lg text-secondary w-full h-full flex flex-col gap-2"
+                className="xl:text-xl text-lg font-bold text-secondary w-full h-full flex flex-col gap-2"
                 htmlFor="mensaje"
             >
-                Mensaje:
+                <span className="px-4 flex">Mensaje</span>
                 <textarea
-                    className="h-32 w-full text-slate-800 resize-none"
+                    className="h-44 w-full new-hero-regular-italic font-normal text-sm text-tertiary resize-none appearance-none border p-2 rounded-lg"
                     id="mensaje"
                     name="mensaje"
                     required
@@ -95,12 +105,12 @@ export const ContactoForm = () => {
             </label>
             <div className="w-full flex gap-4 justify-end">
                 <button
-                    className="min-w-[150px] min-h-[55px] border border-slate-500 rounded-[70px] text-lg font-semibold text-primary"
+                    className="min-w-[130px] min-h-[50px] border border-slate-500 rounded-[70px] text-lg font-semibold text-primary"
                     onClick={handleBorrarTodo}
                 >
                     Borrar todo
                 </button>
-                <button className="min-w-[150px] min-h-[55px] border border-slate-500 rounded-[70px] text-lg font-semibold text-white bg-primary">
+                <button className="min-w-[130px] min-h-[50px] border border-slate-500 rounded-[70px] text-lg font-semibold text-white bg-primary">
                     Enviar
                 </button>
             </div>

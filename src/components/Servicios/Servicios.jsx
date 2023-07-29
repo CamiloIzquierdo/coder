@@ -4,11 +4,11 @@ import { ServicesBox } from "../ServicesBox";
 export const Servicios = ({ serviciosRef }) => {
     return (
         <div
-            className="py-8 xl:px-16 h-full flex flex-col items-center gap-7"
+            className="xl:px-16 h-full flex flex-col items-center gap-7"
             ref={serviciosRef}
         >
             <div className="flex items-center justify-center flex-col gap-2">
-                <span className="font-bold text-4xl text-slate-800">
+                <span className="new-hero-medium xl:text-3xl text-xl text-tertiary">
                     SERVICIOS
                 </span>
                 <div className="h-[2px] w-16 bg-primary" />

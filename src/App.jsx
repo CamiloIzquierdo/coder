@@ -23,14 +23,14 @@ function App() {
                 testimoniosRef={testimoniosRef}
                 contactoRef={contactoRef}
             />
-            <Header />
-            <SobreMi sobreMiRef={sobreMiRef} />
-            <div className="xl:mx-16">
+            <div className="gap-32 flex flex-col">
+                <Header />
+                <SobreMi sobreMiRef={sobreMiRef} />
                 <Servicios serviciosRef={serviciosRef} />
+                <Testimonios testimoniosRef={testimoniosRef} />
+                <Contacto contactoRef={contactoRef} />
+                <Footer />
             </div>
-            <Testimonios testimoniosRef={testimoniosRef} />
-            <Contacto contactoRef={contactoRef} />
-            <Footer />
         </div>
     );
 }
