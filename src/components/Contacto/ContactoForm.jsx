@@ -65,7 +65,7 @@ export const ContactoForm = () => {
                 Servicios
                 <div className="flex relative ">
                     <select
-                        className="w-fit h-[45px] new-hero-regular-italic font-medium text-sm text-tertiary border appearance-none pl-4 py-3 pr-14 rounded-xl"
+                        className="w-fit h-[45px] new-hero-regular-italic font-medium text-sm text-tertiary appearance-none transform-none pl-4 pr-14"
                         type="text"
                         id="servicio"
                         name="servicio"

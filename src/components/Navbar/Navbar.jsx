@@ -13,13 +13,14 @@ export const Navbar = ({
 
     return (
         <nav className="border-gray-200 bg-white lg:rounded sticky left-0 top-0 z-10 items-center w-full justify-center lg:flex-nowrap lg:flex">
-            <div className="flex items-center lg:justify-center py-3 justify-between">
+            <div className="flex items-center lg:justify-center justify-between">
                 <div className="flex justify-center gap-6 items-center lg:hidden">
                     <div>
                         <Hamburger
                             toggled={open}
                             color="gray"
                             toggle={() => setOpen(!open)}
+                            size={30}
                         />
                     </div>
                 </div>
