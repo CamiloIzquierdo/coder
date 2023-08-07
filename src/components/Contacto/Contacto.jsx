@@ -28,7 +28,7 @@ export const Contacto = ({ contactoRef }) => {
 
     return (
         <div
-            className="bg-white flex w-full h-screen items-center justify-center xl:px-1"
+            className="bg-white flex w-full h-screen items-center justify-center xl:px-6"
             ref={contactoRef}
         >
             <div
