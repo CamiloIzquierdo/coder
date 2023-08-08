@@ -3,7 +3,7 @@ export const TestimoniosMockup = [
         id: 0,
         nombre: "Silvana",
         cargo: "Empleada administrativa.",
-        imagen: "alejandra.svg",
+        imagen: "silvana.svg",
         texto: "cada encuentro que hemos tenido me ha servido para  aclarar mis metas y vencer mis miedos. A mis 42 años,después de un montón de obstáculos me animé a perseguir un sueño. Estoy cursando el 1er año del Profesorado de Informática. Me cuesta, pero lo estoy logrando día a día. Le doy las gracias a Manuel",
     },
     {
@@ -24,14 +24,14 @@ export const TestimoniosMockup = [
         id: 3,
         nombre: "Ezequiel",
         cargo: "Lic. en sistemas.",
-        imagen: "hernan.svg",
+        imagen: "ezequiel.svg",
         texto: "Mi proceso de coaching con Manuel Lucero me fue de gran utilidad para lograr ver caminos que por mi cuenta no había visto, tanto en el ámbito laboral y profesional como en el personal. Utilizamos herramientas blandas que por mi formación profesional no conocía.",
     },
     {
         id: 4,
         nombre: "Bruno",
         cargo: "Abogado.",
-        imagen: "hernan.svg",
+        imagen: "bruno.svg",
         texto: "Desde la primera sesión, pude percibir la empatía y la calidez de mi coach. A lo largo de las sesiones, pude experimentar un crecimiento personal significativo. Aprendí a manejar las situaciones que en otro momento no podría haber superado o manejado. Me ayudó a mejorar mi autoestima y a desarrollar habilidades de comunicación saludable",
     },
 ];

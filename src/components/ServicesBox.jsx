@@ -7,12 +7,12 @@ export const ServicesBox = ({ imagen, titulo, children }) => {
                     style={{ backgroundImage: `url(${imagen})` }}
                 />
             </div>
-            <div className="flex flex-col items-center justify-center xl:-ml-44 xl:bg-transparent bg-primary shadow-2xl">
+            <div className="flex flex-col items-center justify-center xl:-ml-44 xl:bg-transparent bg-primary">
                 <h2 className="xl:text-secondary xl:flex-none xl:items-end items-center justify-center flex flex-col gap-6 text-white xl:text-3xl text-xl text-center new-hero-medium-italic py-10 xl:text-end xl:pr-20 w-full">
                     {titulo}
                     <div className="h-[2px] w-16 bg-white xl:hidden" />
                 </h2>
-                <div className="bg-primary max-w-[814px] right-0 bottom-0 xl:py-10 xl:px-16 px-4 pb-6 text-white new-hero-regular text-justify flex gap-7 xl:text-xl text-lg flex-col">
+                <div className="bg-primary shadow-2xl xl:shadow-bottom max-w-[814px] right-0 bottom-0 xl:py-10 xl:px-16 px-4 pb-6 text-white new-hero-regular text-justify flex gap-7 xl:text-xl text-lg flex-col">
                     {children}
                 </div>
             </div>

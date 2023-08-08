@@ -103,14 +103,14 @@ export const ContactoForm = () => {
                     onChange={handleChange}
                 ></textarea>
             </label>
-            <div className="w-full flex gap-4 justify-end">
+            <div className="w-full h-full flex gap-4 justify-end">
                 <button
-                    className="min-w-[130px] min-h-[50px] border border-slate-500 rounded-[70px] text-lg font-semibold text-primary"
+                    className="min-w-[130px] py-3 border flex justify-center items-center border-slate-300 rounded-[70px] text-lg font-semibold text-primary"
                     onClick={handleBorrarTodo}
                 >
                     Borrar todo
                 </button>
-                <button className="min-w-[130px] min-h-[50px] border border-slate-500 rounded-[70px] text-lg font-semibold text-white bg-primary">
+                <button className="min-w-[130px] py-3 border flex justify-center items-center rounded-[70px] text-lg font-semibold text-white bg-primary">
                     Enviar
                 </button>
             </div>
