@@ -8,7 +8,7 @@ export const NavbarData = ({
 }) => {
     console.log(open);
     return (
-        <ul className="xl:h-[90px] h-full pb-4 xl:pb-0 xl:items-center xl:justify-center items-start flex xl:flex-row flex-col xl:gap-20 w-full text-xl font-thin">
+        <ul className="lg:h-[90px] h-full pb-4 lg:pb-0 lg:items-center lg:justify-center items-start flex lg:flex-row flex-col lg:gap-20 w-full text-xl font-thin">
             <button
                 onClick={
                     open

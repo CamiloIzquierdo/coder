@@ -27,15 +27,15 @@ export const CardTestimonios = () => {
         >
             {TestimoniosMockup.map((testimonio) => (
                 <div
-                    className="max-w-[700px] xl:min-h-[500px] 2xl:max-h-[468px] 2xl:min-h-[468px] xl:max-h-[500px] min-h-[320px] shadow-md flex-col flex 2xl:p-16 xl:p-10 p-6 bg-white rounded-xl"
+                    className="max-w-[700px] xl:min-h-[360px] 2xl:max-h-[468px] 2xl:min-h-[468px] xl:max-h-[360px] min-h-[360px] shadow-md flex-col flex 2xl:p-16 xl:p-10 p-6 bg-white rounded-xl"
                     key={testimonio.id}
                 >
                     <div className="flex gap-5  justify-start items-center">
-                        <div className="flex p-3 rounded-full bg-primary">
+                        <div className="flex p-2 rounded-full bg-primary">
                             <img
                                 src={testimonio.imagen}
                                 alt=""
-                                className="xl:w-[50px] xl:h-[50px] w-[55px]"
+                                className="xl:w-[50px] xl:h-[50px] w-[35px]"
                             />
                         </div>
                         <div className="flex flex-col">
