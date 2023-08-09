@@ -31,7 +31,7 @@ export const CardTestimonios = () => {
                     key={testimonio.id}
                 >
                     <div className="flex gap-5  justify-start items-center">
-                        <div className="flex p-2 rounded-full bg-primary">
+                        <div className="flex xl:p-3 p-[10px] rounded-full bg-primary">
                             <img
                                 src={testimonio.imagen}
                                 alt=""
