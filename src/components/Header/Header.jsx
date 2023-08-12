@@ -5,8 +5,8 @@ export const Header = () => {
                 style={{ backgroundImage: `url(escaleras.jpg)` }}
                 className="h-full w-full bg-center bg-cover"
             >
-                <div className="bg-primary h-full w-full bg-opacity-70">
-                    <div className="flex flex-col xl:p-44 gap-16 pt-24 pl-8">
+                <div className="bg-primary h-full flex items-center xl:px-32 px-7 w-full bg-opacity-70">
+                    <div className="flex flex-col gap-12 ">
                         <span className="text-white flex flex-col text-sm xl:text-3xl new-hero-ultra-italic gap-2 ">
                             <span>
                                 “El que se conoce a sí mismo es iluminado
