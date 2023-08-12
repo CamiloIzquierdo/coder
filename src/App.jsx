@@ -8,6 +8,7 @@ import { SobreMi } from "./components/Sobre mi/SobreMi";
 import { Testimonios } from "./components/Testimonios/Testimonios";
 import { ServicesBox } from "./components/ServicesBox";
 import { Footer } from "./components/Footer/Footer";
+import { SecondHeader } from "./components/Header/SecondHeader";
 
 function App() {
     const serviciosRef = useRef(null);
@@ -25,6 +26,7 @@ function App() {
             />
             <div className="gap-32 flex flex-col">
                 <Header />
+                <SecondHeader />
                 <SobreMi sobreMiRef={sobreMiRef} />
                 <Servicios serviciosRef={serviciosRef} />
                 <Testimonios testimoniosRef={testimoniosRef} />

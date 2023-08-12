@@ -23,11 +23,22 @@
 
 @font-face {
     font-family: "New Hero Regular Italic"; /* Nombre de la fuente */
+
     src: url("/public/fonts/NewHeroRegular.otf") format("woff"); /* Ruta a la fuente woff */
+}
+
+@font-face {
+    font-family: "New Hero UltraLight Italic"; /* Nombre de la fuente */
+    src: url("/public/fonts/NewHeroUltraLightItalic.otf") format("woff"); /* Ruta a la fuente woff */
 }
 
 .new-hero-ultra {
     font-family: "New Hero Ultralight", sans-serif; /* Usa la fuente 'Font1' */
+    /* Agrega aquí tus estilos personalizados */
+}
+
+.new-hero-ultra-italic {
+    font-family: "New Hero Ultralight Italic", sans-serif; /* Usa la fuente 'Font1' */
     /* Agrega aquí tus estilos personalizados */
 }
 
