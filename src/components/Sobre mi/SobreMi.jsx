@@ -39,7 +39,7 @@ export const SobreMi = ({ sobreMiRef }) => {
                     <span>
                         Actualmente estoy cursando el último año de la formación
                         como &quot;Terapista Gestáltico&quot; e integro el
-                        equipi de tutores de Fundación Empowerment, asistiendo y
+                        equipo de tutores de Fundación Empowerment, asistiendo y
                         acompañando a las personas que deciden estudiar
                         Coaching.
                     </span>

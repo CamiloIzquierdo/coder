@@ -1,4 +1,18 @@
+import { useEffect, useState } from "react";
+
 export const Header = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setIsVisible(true); // Mostrar el div cuando el componente se monta después del timeout
+        }, 1000); // Cambia el valor en milisegundos según el tiempo de espera deseado
+
+        return () => {
+            clearTimeout(timeout); // Limpiar el timeout si el componente se desmonta antes de que ocurra
+        };
+    }, []);
+
     return (
         <div className="flex justify-center items-center xl:h-header h-[500px] w-full xl:py-5 xl:px-6 ">
             <div
@@ -6,7 +20,13 @@ export const Header = () => {
                 className="h-full w-full bg-center bg-cover"
             >
                 <div className="bg-primary h-full flex items-center xl:px-32 px-7 w-full bg-opacity-70">
-                    <div className="flex flex-col gap-12 ">
+                    <div
+                        className={`${
+                            isVisible
+                                ? "ease-in opacity-100 transform transition-all duration-1000 delay-500 flex flex-col gap-12 translate-y-0"
+                                : "opacity-0 transform transition-all duration-1000 delay-500 translate-y-full"
+                        }`}
+                    >
                         <span className="text-white flex flex-col text-sm xl:text-3xl new-hero-ultra-italic gap-2 ">
                             <span>
                                 “El que se conoce a sí mismo es iluminado
