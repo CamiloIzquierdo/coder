@@ -118,11 +118,7 @@ export const ContactoForm = () => {
                     Enviar
                 </button>
             </div>
-            <input
-                type="hidden"
-                name="_next"
-                value="https://coder-omega.vercel.app"
-            ></input>
+            <input type="hidden" name="_next" value="/"></input>
             <input type="hidden" name="_captcha" value="false"></input>
         </form>
     );

@@ -18,6 +18,8 @@ export const Servicios = ({ serviciosRef }) => {
                     titulo={service.titulo}
                     imagen={service.imagen}
                     key={service.id}
+                    subtitulo={service.subtitulo}
+                    autor={service.autor}
                 >
                     {service.texto}
                 </ServicesBox>
