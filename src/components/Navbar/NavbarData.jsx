@@ -44,7 +44,7 @@ export const NavbarData = ({
             >
                 <li className="w-full flex flex-col items-center justify-center gap-1">
                     <span className="block py-2 pl-3 pr-4 text-tertiary rounded xl:font-semibold justify-start lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0 ">
-                        Sobre mi
+                        Sobre mí
                     </span>
                     <div className="h-[2px] w-9 bg-primary justify-center items-center hidden xl:flex"></div>
                 </li>

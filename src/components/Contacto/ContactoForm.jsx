@@ -60,10 +60,10 @@ export const ContactoForm = () => {
                 />
             </label>
             <label
-                className="xl:text-xl text-lg font-bold text-secondary flex xl:gap-44 gap-10 items-center justify-center px-4 rounded-xl"
+                className="xl:text-xl text-lg font-bold text-secondary flex xl:gap-15 gap-10 items-center justify-center px-2 rounded-xl"
                 htmlFor="servicio"
             >
-                Servicios
+                <span className="px-1">Servicios</span>
                 <div className="flex relative ">
                     <select
                         className="w-fit h-[45px] new-hero-regular-italic font-medium text-sm text-[#9ca3b1] appearance-none outline-none border rounded-xl transform-none pl-4 pr-12"
@@ -77,18 +77,19 @@ export const ContactoForm = () => {
                         <option value="" selected>
                             Selecciona
                         </option>
-                        <option value="Servicio 1">Servicio 1</option>
-                        <option value="Servicio 2">Servicio 2</option>
-                        <option value="Servicio 3 ">Servicio 3</option>
+                        <option value="Coaching psicológico integral">Coaching psicológico integral</option>
+                        <option value="Coaching organizacional integral">Coaching organizacional integral</option>
+                        <option value="Talleres y charlas">Talleres y charlas</option>
                     </select>
                     <img
                         src="select.svg"
                         width={13}
-                        className="absolute top-[20px] left-[110px] "
+                        className="absolute top-[20px] left-[250px] "
                         alt=""
                     />
                 </div>
-            </label>
+                </label>
+
             <label
                 className="xl:text-xl text-lg font-bold text-secondary w-full h-full flex flex-col gap-2"
                 htmlFor="mensaje"

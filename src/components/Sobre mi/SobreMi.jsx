@@ -29,7 +29,7 @@ export const SobreMi = ({ sobreMiRef }) => {
                         En el año 2019, seguí sumando herramientos para poder
                         estar al servicio de manera individual y grupal. Me
                         capacité en &quot;MindFulness&quot;, un curso dictado
-                        por la Universidad de Cordoba. Ese mismo año participé
+                        por la Universidad de Córdoba. Ese mismo año participé
                         del curso de &quot;Distinciones de Psicología&quot;,
                         nociones básicas que necesita cada coachee para hacer
                         una derivación responsable. A su vez, asistí a los

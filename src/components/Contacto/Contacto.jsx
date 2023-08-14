@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { ContactoForm } from "./ContactoForm";
 
 export const Contacto = ({ contactoRef }) => {
@@ -40,7 +41,7 @@ export const Contacto = ({ contactoRef }) => {
                 <div className="xl:hidden flex flex-col justify-center items-center gap-6">
                     <div className="flex w-full h-full justify-center items-center flex-col gap-2 ">
                         <h2 className="new-hero-medium text-xl text-tertiary">
-                            CONTÁCTAME!
+                            CONTACTAME!
                         </h2>
                         <div className="h-[2px] w-16 bg-primary"></div>
                     </div>
@@ -53,7 +54,7 @@ export const Contacto = ({ contactoRef }) => {
                 </div>
                 <div className="flex w-full h-full justify-center items-center pl-72 flex-col gap-2 ">
                     <h2 className="new-hero-medium xl:text-3xl text-tertiary">
-                        CONTÁCTAME!
+                        CONTACTAME!
                     </h2>
                     <div className="h-[2px] w-16 bg-primary"></div>
                 </div>

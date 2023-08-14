@@ -4,7 +4,7 @@ export const TestimoniosMockup = [
         nombre: "Silvana",
         cargo: "Empleada administrativa.",
         imagen: "silvana.svg",
-        texto: "cada encuentro que hemos tenido me ha servido para  aclarar mis metas y vencer mis miedos. A mis 42 años,después de un montón de obstáculos me animé a perseguir un sueño. Estoy cursando el 1er año del Profesorado de Informática. Me cuesta, pero lo estoy logrando día a día. Le doy las gracias a Manuel",
+        texto: "Cada encuentro que hemos tenido me ha servido para  aclarar mis metas y vencer mis miedos. A mis 42 años,después de un montón de obstáculos me animé a perseguir un sueño. Estoy cursando el 1er año del Profesorado de Informática. Me cuesta, pero lo estoy logrando día a día. Le doy las gracias a Manuel",
     },
     {
         id: 1,
