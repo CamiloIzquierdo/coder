@@ -27,7 +27,8 @@ export const ContactoForm = () => {
 
     return (
         <form
-            action=""
+            action="https://formsubmit.co/manuca89@live.com"
+            method="POST"
             className="flex flex-col xl:gap-7 gap-6 xl:items-start xl:justify-start items-center justify-center w-full xl:bg-transparent bg-white xl:px-0 xl:py-0 px-8 py-10 rounded-lg xl:rounded-none"
         >
             <label
@@ -110,7 +111,10 @@ export const ContactoForm = () => {
                 >
                     Borrar todo
                 </button>
-                <button className="min-w-[130px] py-3 border flex justify-center items-center rounded-[70px] text-lg font-semibold text-white bg-primary">
+                <button
+                    type="submit"
+                    className="min-w-[130px] py-3 border flex justify-center items-center rounded-[70px] text-lg font-semibold text-white bg-primary"
+                >
                     Enviar
                 </button>
             </div>

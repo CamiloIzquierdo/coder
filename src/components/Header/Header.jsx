@@ -19,7 +19,7 @@ export const Header = () => {
                 style={{ backgroundImage: `url(escaleras.jpg)` }}
                 className="h-full w-full bg-center bg-cover"
             >
-                <div className="bg-primary h-full flex items-center xl:px-32 px-7 w-full bg-opacity-70">
+                <div className="h-full flex items-center xl:px-32 px-7 w-full ">
                     <div className="flex flex-col gap-12">
                         <div
                             className={`${
