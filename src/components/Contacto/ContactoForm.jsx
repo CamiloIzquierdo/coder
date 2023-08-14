@@ -27,7 +27,7 @@ export const ContactoForm = () => {
 
     return (
         <form
-            action="https://formsubmit.co/manuca89@live.com"
+            action="https://formsubmit.co/camiloi.dev@gmail.com"
             method="POST"
             className="flex flex-col xl:gap-7 gap-6 xl:items-start xl:justify-start items-center justify-center w-full xl:bg-transparent bg-white xl:px-0 xl:py-0 px-8 py-10 rounded-lg xl:rounded-none"
         >
@@ -118,6 +118,12 @@ export const ContactoForm = () => {
                     Enviar
                 </button>
             </div>
+            <input
+                type="hidden"
+                name="_next"
+                value="https://coder-omega.vercel.app"
+            ></input>
+            <input type="hidden" name="_captcha" value="false"></input>
         </form>
     );
 };
