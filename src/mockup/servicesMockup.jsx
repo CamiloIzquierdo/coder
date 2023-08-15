@@ -36,7 +36,7 @@ export const servicesInfo = [
         ),
         titulo: "Coaching psicológico integral",
         imagen: "servicios.jpg",
-        subtitulo: "El arte de soplar brasas",
+        subtitulo: <>El arte de soplar brasas</>,
     },
     {
         id: 1,
@@ -76,8 +76,13 @@ export const servicesInfo = [
         ),
         titulo: "Coaching organizacional integral",
         imagen: "servicios2.jpg",
-        subtitulo:
-            "Los buenos equipos se convierten en grandes equipos cuando sus integrantes confían tanto en sus compañeros como para que prevalezca el nosotros sobre el yo",
+        subtitulo: (
+            <>
+                "Los buenos equipos se convierten en grandes equipos cuando sus
+                integrantes confían tanto en sus compañeros como para que
+                prevalezca el nosotros sobre el yo"
+            </>
+        ),
         autor: "P. Jackson",
     },
     {
@@ -93,8 +98,13 @@ export const servicesInfo = [
         ),
         titulo: "Talleres y charlas",
         imagen: "servicios3.jpg",
-        subtitulo:
-            "Hasta que no te hagas consciente de lo que llevas en tu inconsciente, este último dirigirá tu vida y tú le llamarás destino",
+        subtitulo: (
+            <>
+                "Hasta que no te hagas consciente de lo que llevas en tu
+                inconsciente, este último dirigirá tu vida y tú le llamarás
+                destino"
+            </>
+        ),
         autor: "C.G.Jung",
     },
 ];

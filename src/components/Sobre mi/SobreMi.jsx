@@ -6,7 +6,7 @@ export const SobreMi = ({ sobreMiRef }) => {
         >
             <div className="flex items-center justify-center flex-col gap-2 pb-24">
                 <span className="new-hero-medium xl:text-3xl text-xl text-tertiary">
-                    SOBRE MI
+                    SOBRE MÍ
                 </span>
                 <div className="h-[2px] w-16 bg-primary"></div>
             </div>

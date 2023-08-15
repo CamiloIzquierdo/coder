@@ -17,7 +17,7 @@ export const ServicesBox = ({ imagen, titulo, children, subtitulo, autor }) => {
 
                 <div className="xl:hidden w-full items-center justify-center flex flex-col py-6 px-4">
                     <h4 className=" py-6 new-hero-medium-italic text-xl text-white text-center">
-                        &quot;{subtitulo}&quot;{" "}
+                        {subtitulo}{" "}
                         <span className="new-hero-regular-italic text-xl">
                             {autor}
                         </span>
@@ -27,7 +27,7 @@ export const ServicesBox = ({ imagen, titulo, children, subtitulo, autor }) => {
                 <div className="bg-primary shadow-2xl xl:shadow-bottom max-w-[814px] right-0 bottom-0 xl:py-10 xl:px-16 px-4 pb-6 text-white new-hero-regular text-justify flex gap-7 xl:text-xl text-lg flex-col">
                     <div className="xl:flex hidden w-full items-center justify-center flex-col py-10 px-4">
                         <h4 className="justify-center items-center new-hero-medium-italic text-2xl text-white">
-                            &quot;{subtitulo}&quot;{" "}
+                            {subtitulo}{" "}
                             <span className="new-hero-regular-italic text-xl text-white">
                                 {autor}
                             </span>

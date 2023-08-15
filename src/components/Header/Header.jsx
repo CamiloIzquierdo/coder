@@ -38,7 +38,7 @@ export const Header = () => {
                                 </span>
                                 <span>
                                     El que se conquista a sí mismo es{" "}
-                                    <strong>Invencible</strong>”
+                                    <strong>invencible</strong>”
                                 </span>
                                 <span> Lao-Tse</span>
                             </span>
