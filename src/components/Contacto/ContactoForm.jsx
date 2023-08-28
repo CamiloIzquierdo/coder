@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 export const ContactoForm = () => {
     const [formulario, setFormulario] = useState({
@@ -7,6 +8,21 @@ export const ContactoForm = () => {
         servicio: "",
         mensaje: "",
     });
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        fetch("https://formsubmit.co/ajax/manuca89@live.com", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: JSON.stringify(formulario),
+        })
+            .then((resp) => resp.json())
+            .then(() => toast.success("El email se envio correctamente!"))
+            .catch(() => toast.error("Ocurrio un error al enviar el email"));
+    };
 
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -27,9 +43,8 @@ export const ContactoForm = () => {
 
     return (
         <form
-            action="https://formsubmit.co/manuca89@live.com"
-            method="POST"
-            className="flex flex-col xl:gap-7 gap-6 xl:items-start xl:justify-start items-center justify-center w-full xl:bg-transparent bg-white xl:px-0 xl:py-0 px-8 py-10 rounded-lg xl:rounded-none"
+            onSubmit={handleSubmit}
+            className="flex flex-col xl:gap-7 gap-6 xl:items-start xl:justify-start items-center justify-center w-full xl:bg-transparent bg-white xl:px-0 xl:py-0 px-3 py-10 rounded-lg xl:rounded-none"
         >
             <label
                 htmlFor=""
@@ -51,22 +66,23 @@ export const ContactoForm = () => {
             >
                 <span className="px-4">Correo electrónico</span>
                 <input
-                    type="text"
+                    type="email"
                     className="border rounded-lg w-full text-slate-800 h-8 new-hero-regular-italic font-normal text-sm px-[15px]"
                     placeholder="correo@dirección.com"
                     name="email"
                     value={formulario.email}
                     onChange={handleChange}
+                    required
                 />
             </label>
             <label
-                className="xl:text-xl text-lg font-bold text-secondary flex xl:gap-15 gap-10 items-center justify-center px-2 rounded-xl"
+                className="xl:text-xl text-lg font-bold text-secondary flex gap-2 xl:gap-14 items-center justify-center px-2 rounded-xl md:justify-between"
                 htmlFor="servicio"
             >
                 <span className="px-1">Servicios</span>
-                <div className="flex relative ">
+                <div className="flex min-w-[240px] justify-between border rounded-xl items-center ">
                     <select
-                        className="w-fit h-[45px] new-hero-regular-italic font-medium text-sm text-[#9ca3b1] appearance-none outline-none border rounded-xl transform-none pl-4 pr-12"
+                        className="w-fit py-2 new-hero-regular-italic font-medium text-[13px] px-1 md:text-base text-[#9ca3b1] appearance-none outline-none transform-none items-center flex justify-center"
                         type="text"
                         id="servicio"
                         name="servicio"
@@ -77,18 +93,19 @@ export const ContactoForm = () => {
                         <option value="" selected>
                             Selecciona
                         </option>
-                        <option value="Coaching psicológico integral">Coaching psicológico integral</option>
-                        <option value="Coaching organizacional integral">Coaching organizacional integral</option>
-                        <option value="Talleres y charlas">Talleres y charlas</option>
+                        <option value="Coaching psicológico integral">
+                            Coaching psicológico integral
+                        </option>
+                        <option value="Coaching organizacional integral">
+                            Coaching organizacional integral
+                        </option>
+                        <option value="Talleres y charlas">
+                            Talleres y charlas
+                        </option>
                     </select>
-                    <img
-                        src="select.svg"
-                        width={13}
-                        className="absolute top-[20px] left-[250px] "
-                        alt=""
-                    />
+                    <img src="select.svg" width={13} alt="" />
                 </div>
-                </label>
+            </label>
 
             <label
                 className="xl:text-xl text-lg font-bold text-secondary w-full h-full flex flex-col gap-2"
